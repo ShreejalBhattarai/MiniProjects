@@ -6,28 +6,26 @@ int BinarySearch(int* arr, int targetnumber, int sizearr);
 void SelectionSort(int* arr, int sizearr);
 void  arrayscrambler(int* arr, int sizearr);
 void insertionSort(int* arr, int sizearr);
-// void display(int* arr(), int sizearr);
+void display(int* arr, int sizearr);
 
 int main(){
     int given_array[5]= {2,3,7,4,1};
     int target = 4;
     int size = 5;
+    
     SelectionSort(given_array, size);
     int printer = BinarySearch(given_array, target, size);
     cout << "The search process was successful. The result is in "<<printer<<" index."<<endl;
     cout<< "Also the sorted array using selection sort is: "<<endl;
-    for(int i=0; i<size; i++){
-        cout<<given_array[i];
-    }
+    display(given_array, size);
+    cout<<endl;
     cout<<endl;
     cout<<"Let's scramble the array and utilise insertion sort."<<endl;
     arrayscrambler(given_array, size);
+    cout<<endl;
     cout<<"The sorted array is "<<endl;
     insertionSort(given_array, size);
-    for(int i=0; i<size; i++){
-        cout<<given_array[i];
-    }
-    
+    display(given_array, size);
     return 0;
 }
 
@@ -76,23 +74,33 @@ void insertionSort(int* arr, int sizearr){
    }
 }
 
-void arrayscrambler(int* arr, int sizearr){
-    for(int i=0; i<sizearr; i++){
-        random_device rd;
-        int temp=0;
-        mt19937 gen(rd());
-        uniform_int_distribution<> dist(0, sizearr-1);
-        int random_number = dist(gen);
-        arr[random_number]= temp;
-        arr[random_number] = arr[i];
-        arr[i] = temp;
-        cout<<arr[i];
+void arrayscrambler(int* arr, int sizearr) {
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_int_distribution<> dist;
+
+    for (int i = sizearr - 1; i > 0; i--) {
+        dist.param(uniform_int_distribution<>::param_type(0, i));
+        int random_index = dist(gen);
+
+        // Swap arr[i] with arr[random_index]
+        int temp = arr[i];
+        arr[i] = arr[random_index];
+        arr[random_index] = temp;
     }
+
+    // Print the scrambled array
+    for (int i = 0; i < sizearr; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 }
 
-// void display(int* arr()){
-//     for(int i=0; i,)
-// }
+void display(int* arr, int sizearr){
+    for(int i=0; i<sizearr; i++){
+        cout<<i<<" ";
+    }
+}
 
 
 
