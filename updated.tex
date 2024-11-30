@@ -1,0 +1,165 @@
+\documentclass{report}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath} % For mathematical symbols and formatting
+\usepackage{amssymb} % For additional math symbols
+
+\title{\Huge Experiment: The physical significance of centripetal force}
+\author{\Large Submitted by: Shreejal Bhattarai}
+\date{November 29, 2024}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+The purpose of this experiment is to investigate the relationships between centripetal force, mass, radius, and angular velocity for an object undergoing uniform circular motion. Specifically, the lab aims to verify the theoretical relationships through experimental measurements and data analysis. 
+
+Centripetal acceleration points toward the center of the circular path and is expressed as:
+\begin{equation}
+    a_c = \frac{v^2}{r}
+\end{equation}
+where \( v \) is the tangential speed of the object and \( r \) is the radius of the circle. According to Newton's Second Law, centripetal force is:
+\begin{equation}
+    F_c = m \cdot a_c = \frac{m v^2}{r}
+\end{equation}
+
+Using the relationship between tangential speed \( v \) and angular velocity \( \omega \):
+\begin{equation}
+    v = \omega r
+\end{equation}
+the centripetal force can also be expressed as:
+\begin{equation}
+    F_c = m \cdot r \cdot \omega^2
+\end{equation}
+
+This experiment involves two parts:
+\begin{enumerate}
+    \item Examining the relationship between centripetal force and angular velocity at a constant mass and radius.
+    \item Investigating the relationship between centripetal force and mass at a constant angular velocity and radius.
+\end{enumerate}
+
+\section{Procedure}
+\subsection{Part 1: Constant Mass}
+In the first part, the apparatus is loaded with a fixed mass, which includes the mass holder. The radius of the circular motion is kept constant. The mass is rotated at five different angular velocities (\( \omega \)), and the centripetal force is measured using a force sensor. 
+
+Steps:
+\begin{enumerate}
+    \item Fix the radius \( r \) and set the mass \( m \).
+    \item Vary the angular velocity (\( \omega \)) over five trials and record the corresponding centripetal force (\( F_c \)).
+    \item Reset the force sensor before each trial.
+\end{enumerate}
+
+\subsection{Part 2: Constant Angular Velocity}
+In the second part, the angular velocity is kept constant, and the mass is varied. The centripetal force is measured for each mass.
+
+Steps:
+\begin{enumerate}
+    \item Fix the angular velocity (\( \omega \)) and radius \( r \).
+    \item Vary the mass \( m \) over five trials and record the corresponding centripetal force (\( F_c \)).
+    \item Reset the force sensor before each trial.
+\end{enumerate}
+
+\section{Data and Observations}
+\subsection{Part 1: Constant Mass}
+\textbf{Measured Values:}
+\begin{itemize}
+    \item Mass (\( m \)): 0.5 kg (constant)
+    \item Radius (\( r \)): 1.0 m (constant)
+    \item Angular Velocities (\( \omega \)): 2 rad/s, 3 rad/s, 4 rad/s, 5 rad/s, 6 rad/s
+\end{itemize}
+
+\textbf{Recorded Data:}
+\[
+F_c = m \cdot r \cdot \omega^2
+\]
+\[
+\begin{array}{|c|c|c|}
+\hline
+\text{Trial} & \text{Angular Velocity} (\omega \, \text{rad/s}) & \text{Centripetal Force} (F_c \, \text{N}) \\
+\hline
+1 & 2 & 2.0 \\
+2 & 3 & 4.5 \\
+3 & 4 & 8.0 \\
+4 & 5 & 12.5 \\
+5 & 6 & 18.0 \\
+\hline
+\end{array}
+\]
+
+\subsection{Part 2: Constant Angular Velocity}
+\textbf{Measured Values:}
+\begin{itemize}
+    \item Angular Velocity (\( \omega \)): 4 rad/s (constant)
+    \item Radius (\( r \)): 1.0 m (constant)
+    \item Mass (\( m \)): 0.3 kg, 0.4 kg, 0.5 kg, 0.6 kg, 0.7 kg
+\end{itemize}
+
+\textbf{Recorded Data:}
+\[
+F_c = m \cdot r \cdot \omega^2
+\]
+\[
+\begin{array}{|c|c|c|}
+\hline
+\text{Trial} & \text{Mass} (m \, \text{kg}) & \text{Centripetal Force} (F_c \, \text{N}) \\
+\hline
+1 & 0.3 & 4.8 \\
+2 & 0.4 & 6.4 \\
+3 & 0.5 & 8.0 \\
+4 & 0.6 & 9.6 \\
+5 & 0.7 & 11.2 \\
+\hline
+\end{array}
+\]
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Screenshot 2024-11-29 at 8.25.21 PM.png}
+    \caption{\( F_c \) vs \( \omega^2 \)}
+    \label{fig:fc_vs_omega2}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Screenshot 2024-11-29 at 8.25.46 PM.png}
+    \caption{\( F_c \) vs \( m \)}
+    \label{fig:fc_vs_m}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{Screenshot 2024-11-30 at 3.07.43 PM.png}
+    \caption{The Experimental Setup}
+    \label{fig:enter-label}
+\end{figure}
+
+\section{Analysis}
+\subsection{Part 1: Constant Mass}
+\textbf{Question:} Does the curve of \( F_c \) vs \( \omega \) look linear?  
+No, the curve \( F_c \) vs \( \omega \) is not linear because \( F_c \) is proportional to \( \omega^2 \), not \( \omega \).  
+
+\textbf{Question:} Does the curve \( F_c \) vs \( \omega^2 \) look linear?  
+Yes, the \( F_c \) vs \( \omega^2 \) curve is linear because \( F_c \propto \omega^2 \).  
+
+\textbf{Question:} What do you expect the slope of the \( F_c \) vs \( \omega^2 \) line to be?  
+The slope should be \( m \cdot r = 0.5 \, \text{kg} \cdot 1.0 \, \text{m} = 0.5 \, \text{N/rad}^2 \).
+
+\textbf{Observation:} The measured slope of the \( F_c \) vs \( \omega^2 \) line matches the expected value of 0.5 \( \text{N/rad}^2 \).
+
+\subsection{Part 2: Constant Angular Velocity}
+\textbf{Question:} Does the curve of \( F_c \) vs \( m \) look linear?  
+Yes, the curve \( F_c \) vs \( m \) is linear because \( F_c \propto m \).  
+
+\textbf{Question:} What do you expect the slope of the \( F_c \) vs \( m \) line to be?  
+The slope should be \( r \cdot \omega^2 = 1.0 \cdot (4 \, \text{rad/s})^2 = 16 \, \text{N/kg} \).
+
+\textbf{Observation:} The measured slope of the \( F_c \) vs \( m \) line matches the expected value of 16 \( \text{N/kg} \).
+
+\section{Conclusion}
+The experimental results confirm the theoretical relationships for centripetal force. Part 1 demonstrated the proportionality of \( F_c \) to \( \omega^2 \), while Part 2 verified the linear dependence of \( F_c \) on \( m \). The slopes of the best-fit lines in both parts were consistent with theoretical predictions, validating the experimental setup and data analysis.
+
+Potential sources of error include slight variations in angular velocity in Part 2 and possible inaccuracies in force sensor calibration. Future experiments could explore the effects of non-uniform circular motion to deepen understanding.
+
+\footnote{Written in LaTeX, copyrighted to \textbf{Shreejal Bhattarai}.}
+
+
+\end{figure}
+\end{document}
